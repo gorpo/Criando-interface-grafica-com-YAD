@@ -1,0 +1,6 @@
+P|Qual comando pode ser usado para compactar um arquivo em tar.gz?
+Q1 "tar -zcf arquivo.tar.gz arquivo_a_compactar"
+Q2 "tar -gcf arquivo.tar.gz arquivo_a_compactar"
+Q3 "tar Jcf arquivo.tar.gz arquivo_a_compactar"
+Q4 "tar jcf arquivo.tar.gz arquivo_a_compactar"
+R|Q1

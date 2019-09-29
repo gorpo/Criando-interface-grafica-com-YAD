@@ -1,0 +1,6 @@
+P|Qual dos comandos abaixo permite redirecionar sua entrada padrão para a saída padrão?
+Q1 "gato"
+Q2 "cp"
+Q3 "mv"
+Q4 "cat"
+R|Q4

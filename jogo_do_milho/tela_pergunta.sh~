@@ -1,0 +1,39 @@
+#!/bin/bash
+ARQUIVO="$1"
+RESP=$(egrep '^R.*' "$ARQUIVO" | cut -d'|' -f2)
+PERGUNTA=$(egrep '^P.*' "$ARQUIVO" | cut -d'|' -f2) 
+QUESTAO[1]=$(egrep '^Q1.*' "$ARQUIVO") 
+QUESTAO[2]=$(egrep '^Q2.*' "$ARQUIVO") 
+QUESTAO[3]=$(egrep '^Q3.*' "$ARQUIVO") 
+QUESTAO[4]=$(egrep '^Q4.*' "$ARQUIVO")
+
+QTD_QUESTOES="${#QUESTAO[@]}"
+
+RESPOSTA=$(\
+	eval yad --list \
+    --title \'Jogo do Milho \' \
+    --width=500 --height=500 \
+    --window-icon=\'vux.png\' \
+    --borders=20 \
+    --undecorated \
+    --sticky \
+    --center \
+    --no-headers \
+    --hide-column=1 \
+    --print-column=1 \
+    --separator=\'\' \
+    --timeout=10 \
+    --timeout-indicator=\'left\' \
+    --text \"\<b\>$PERGUNTA\<\/b\>\" \
+    --button=\'Pulo\':\"./tela_pulo.sh\"  --button=\'Parar\':1 --button=\'Respondo\':0 \
+    --column=\'OP\':TEXT --column=\'Opções\':TEXT \
+    $( for i in $(seq $QTD_QUESTOES)
+    	do
+			echo ${QUESTAO[$i]}
+    	done ))
+    	
+[ "$?" -eq 1 -o "$?" -eq 252 ] && exit
+
+[ "$RESPOSTA" == "$RESP" ] && yad --title='Jodo do Milho' --text='Parabéns você acertou!' --button='OK':0
+
+./tela_perdeu.sh && exit

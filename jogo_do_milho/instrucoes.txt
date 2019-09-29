@@ -1,0 +1,29 @@
+Jogo do Milho ;-)
+
+Jogo usando Shell Script + Yad 
+
+Ele é bem genérico, coloquei apenas 3 perguntas, mas qualquer um poderá utilizá-lo, adicionando mais perguntas.
+
+Para adicionar mais perguntas, basta criar um arquivo com o "formato" .pergunta, dentro do diretório perguntas e seguir a seguinte estrutura:
+
+P| coloque a sua pergunta aqui
+Q1 "alternativa1"
+Q2 "alternativa2"
+Q3 "alternativa3"
+Q4 "alternativa4"
+R|Q2 indique a alternativa correta aqui usando o seu identificador, como no exemplo Q2
+
+Exemplo:
+P|Qual dos comandos abaixo permite redirecionar sua entrada padrão para a saída padrão?
+Q1 "gato"
+Q2 "cp"
+Q3 "mv"
+Q4 "cat"
+R|Q4
+
+Para executá-lo, basta chamar o script main.sh:
+
+./main.sh
+
+Observe no código abaixo que são 4 arquivo, separados por "#---------------------------".
+Boa diversão à todos.
