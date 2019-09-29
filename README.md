@@ -5,6 +5,13 @@ Apresentando o Yad
 
 Nesse artigo vou mostrar uma maravilhosa ferramenta para GUI (Interface Gráfica com o Usuário), o Yad, um fork do Zenity que vem com diversas melhorias, dentre elas a possibilidade de fazer formulários, melhorando a interação do usuário com nossos scripts em shell. 
 
+Ubuntu:
+
+sudo add-apt-repository ppa:webupd8team/y-ppa-manager
+$ sudo apt-get update
+$ sudo apt-get install yad
+
+
 Instalação
 Baixe a versão mais recente do Yad no link abaixo:
 
