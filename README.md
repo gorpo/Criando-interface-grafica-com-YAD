@@ -25,7 +25,9 @@ tar –Jxf arquivo.tar.xz
 Instale:
 
 ./configure
+
 $ sudo make
+
 $ sudo make install
 
 Pode acontecer dele reclamar de alguma dependência, aqui no meu Debian, reclamou do libgtk2, basta instalar com:
@@ -38,16 +40,27 @@ yad
 Abaixo exemplo com os tipos de diálogo:
 
 --calendar (calendário)
+
 --color (paleta de cores)
+
 --entry (entrada de dados)
+
 --icons (mostra uma caixa com ícones de atalho para aplicações)
+
 --file (diálogo para selecionar arquivos)
+
 --font (diálogo para seleção de fontes)
+
 --form (aeeeeeee formulários)
+
 --list (diálogo com ítens em lista)
+
 --notification (mostra um ícone da barra de notificação do sistema)
+
 --progress (diálogo de progresso)
+
 --text-info (mostra o conteúdo de um arquivo texto)
+
 --scale (diálogo para seleção de valor, usando uma escala) 
 
 #Exemplos e criaçoes minhas com YAD + Zenity serão aqui postadas.
