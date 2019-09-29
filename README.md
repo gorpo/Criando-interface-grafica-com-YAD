@@ -4,6 +4,13 @@ Criando interface grafica com YAD
 Apresentando o Yad
 
 Nesse artigo vou mostrar uma maravilhosa ferramenta para GUI (Interface Gráfica com o Usuário), o Yad, um fork do Zenity que vem com diversas melhorias, dentre elas a possibilidade de fazer formulários, melhorando a interação do usuário com nossos scripts em shell. 
+Existem mais opçõesque sempre está disponível o 'comando mãe' de todo usuário de terminal no GNU/Linux, o 'main':
+
+main yad
+
+Se quiser dar uma lembrada rápida nas opções disponíveis para um Dialog específico, é só usar o comando '--help-DIALOG', trocando o DIALOG pelo nome do dialog desejado, veja:
+
+yad --help-list
 
 Ubuntu:
 
