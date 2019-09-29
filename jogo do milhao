@@ -1,0 +1,15 @@
+#!/bin/bash
+# Exemplo usando vários recursos gerais do Yad para criação de um possivel jogo
+yad --list \
+    --title='Jogo do Milho' --width=500 --height=500 \
+    --window-icon='vux.png' --image='milho.jpg' \
+    --image-on-top --borders=50 \
+    --undecorated --sticky --center --timeout=5 \
+    --timeout-indicator='left' \
+    --text="Pergunta que vale 1 Milhão de Reais\n\nQuem criou a Fundação para o Software Livre (Free Software Foundation) ?" \
+    --button='Cartas':"tela_cartas" --button='Eu pulo':"tela_pulo" --button='Parar':1 --button='Respondo':0 \
+    --column='OP':NUM --column='Opções':TEXT \
+    1 'Com certeza Linus Torvalds' \
+    2 'Claro que foi o Tux' \
+    3 'Richard Stallman' \
+    4 'Steve Jobs caraio'
