@@ -12,6 +12,8 @@ Se quiser dar uma lembrada rápida nas opções disponíveis para um Dialog espe
 
 yad --help-list
 
+---------------------------------------------------------------------------------------
+
 Ubuntu:
 
 sudo add-apt-repository ppa:webupd8team/y-ppa-manager
@@ -46,7 +48,20 @@ sudo apt-get install libgtk2.0-dev
 Após instalar, podemos testar com:
 yad
 
-Abaixo exemplo com os tipos de diálogo:
+---------------------------------------------------------------------------------------
+Para ver mais opções pré-definidas, instale gtk2.0-examples:
+
+sudo apt-get install gtk2.0-examples
+
+E execute o gtk-demo:
+
+gtk-demo
+
+Vá na opção "Stock Item and Icon Browser" e veja a quantidade de opções disponíveis: 
+---------------------------------------------------------------------------------------
+
+
+Abaixo exemplo com os tipos de diálogo YAD:
 
 --calendar (calendário)
 
@@ -72,5 +87,6 @@ Abaixo exemplo com os tipos de diálogo:
 
 --scale (diálogo para seleção de valor, usando uma escala) 
 
+--------------------------------------------------------------------------------------
 #Exemplos e criaçoes minhas com YAD + Zenity serão aqui postadas.
 
